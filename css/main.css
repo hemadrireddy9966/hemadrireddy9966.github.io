@@ -1260,30 +1260,46 @@ header .logo a {
 	color: #FF0077;
 }
 
-/**
- * responsive:
- * header styles
- * --------------------------------------------------------------- 
- */
-@media only screen and (max-width:1024px) {
-	header .top-bar {
-		left: 60px;
-	}
+header {
+	position: fixed;
+	width: 100%;
+	min-height: 66px;
+	z-index: 600;
 }
-@media only screen and (max-width:768px) {
-	header .top-bar {
-		left: 50px;
-	}
+header .row {
+	position: relative;
+	min-height: 66px;
 }
-@media only screen and (max-width:600px) {
-	header .top-bar {
-		left: 35px;
-	}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
 }
-@media only screen and (max-width:400px) {
-	header .top-bar {
-		left: 25px;
-	}
+
+.top-bar a {
+    margin: 0 15px; /* Space between links */
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px; /* Font size for desktop */
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .top-bar {
+        justify-content: space-between; /* Distribute space between items */
+        flex-wrap: nowrap; /* Prevent items from wrapping */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .top-bar a {
+        margin: 0 7px; /* Adjust spacing for mobile */
+        font-size: 16px; /* Smaller font size for mobile */
+    }
 }
 
 
