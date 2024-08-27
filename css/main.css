@@ -1297,7 +1297,7 @@ header .row {
     }
 
     .top-bar a {
-        margin: 0 7px; /* Adjust spacing for mobile */
+        margin: 5px; /* Adjust spacing for mobile */
         font-size: 16px; /* Smaller font size for mobile */
     }
 }
