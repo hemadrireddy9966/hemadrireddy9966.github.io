@@ -869,24 +869,6 @@ textarea {
 }
 /* Container for the horizontal scroll */
 
-/* Example CSS styles */
-.top-bar {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	
-}
-
-.top-header a {
-    color: #fff;
-    text-decoration: tomato;
-    font-size: 37px;
-	margin-right: 50px;
-	
-}
 .progress-text {
 margin-bottom: auto;
 }
